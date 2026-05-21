@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: tech-challenge-4-api
+    runtime: docker
+    plan: free
+    healthCheckPath: /health
+    autoDeploy: true
+    envVars:
+      - key: TICKER
+        value: PETR4.SA
+      - key: LOG_LEVEL
+        value: info
+      - key: PORT
+        value: 8000

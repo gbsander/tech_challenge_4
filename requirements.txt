@@ -1,0 +1,18 @@
+# tensorflow-cpu só tem wheel em Linux x86_64 — economiza ~600 MB do binário GPU
+# do tensorflow padrão. Nos demais (Mac arm64, Linux aarch64) usamos tensorflow.
+tensorflow==2.21.0; platform_system == "Darwin"
+tensorflow-cpu==2.21.0; platform_system == "Linux" and platform_machine == "x86_64"
+tensorflow==2.21.0; platform_system == "Linux" and platform_machine == "aarch64"
+
+yfinance==1.3.0
+curl_cffi==0.15.0
+pandas==2.2.3
+numpy>=1.26,<3
+scikit-learn==1.5.2
+fastapi==0.115.4
+uvicorn[standard]==0.32.0
+pydantic==2.9.2
+pydantic-settings==2.6.0
+prometheus-client==0.21.0
+python-json-logger==2.0.7
+httpx==0.27.2

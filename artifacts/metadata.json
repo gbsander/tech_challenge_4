@@ -1,0 +1,24 @@
+{
+  "ticker": "PETR4.SA",
+  "start_date": "2015-01-01",
+  "end_date": "2026-05-09",
+  "window": 60,
+  "feature": "Close",
+  "n_train_samples": 2198,
+  "n_val_samples": 282,
+  "n_test_samples": 283,
+  "trained_at": "2026-05-09T23:03:32.736658+00:00",
+  "epochs_run": 22,
+  "metrics_test": {
+    "mae": 0.9729859828948975,
+    "rmse": 1.3109241724014282,
+    "mape": 2.690640926361084
+  },
+  "metrics_val": {
+    "mae": 0.9632695913314819,
+    "rmse": 1.186858057975769,
+    "mape": 2.5359344482421875
+  },
+  "framework": "tensorflow",
+  "framework_version": "2.21.0"
+}
